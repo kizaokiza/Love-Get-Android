@@ -24,7 +24,12 @@ public class MenuMethod : MonoBehaviour {
     public Text modelText;
     public Text modeText;
     public MaskableGraphic imageblink;
-   
+
+    bool disableFiring = false;
+    float firingDisableDuration = 0.75f; // or whatever time you want
+
+
+
 
 
     public float interval = 1f;
@@ -104,10 +109,12 @@ public class MenuMethod : MonoBehaviour {
 
     public void next()
     {
-        if (i <= 2)
+        if (!disableFiring)
+        {
+            if (i <= 2)
         {
             i++;
-            Vector3 nextone = new Vector3(-4.53f, 0f, 0f);
+            Vector3 nextone = new Vector3(-5.85f, 0f, 0f);
             iTween.MoveBy(karakter1, nextone, 0.75f);
             iTween.MoveBy(karakter2, nextone, 0.75f);
             iTween.MoveBy(karakter3, nextone, 0.75f);
@@ -115,36 +122,50 @@ public class MenuMethod : MonoBehaviour {
         if (j <= 2)
         {
             j++;
-            Vector3 nextone = new Vector3(-4.53f, 0f, 0f);
+            Vector3 nextone = new Vector3(-5.85f, 0f, 0f);
             iTween.MoveBy(mode1, nextone, 0.75f);
             iTween.MoveBy(mode2, nextone, 0.75f);
             iTween.MoveBy(mode3, nextone, 0.75f);
+        }
+            disableFiring = true;
+            Invoke("EnableFiring", firingDisableDuration);
         }
 
 
     }
 
+    void EnableFiring()
+    {
+        disableFiring = false;
+    }
+
     public void prev()
     {
-        if (i >= 1)
-        {
-            i--;
-            Vector3 prevone = new Vector3(4.53f, 0f, 0f);
-            iTween.MoveBy(karakter1, prevone, 0.75f);
-            iTween.MoveBy(karakter2, prevone, 0.75f);
-            iTween.MoveBy(karakter3, prevone, 0.75f);
-            
-        }
-        if (j >= 1)
-        {
-            j--;
-            Vector3 prevone = new Vector3(4.53f, 0f, 0f);
-            iTween.MoveBy(mode1, prevone, 0.75f);
-            iTween.MoveBy(mode2, prevone, 0.75f);
-            iTween.MoveBy(mode3, prevone, 0.75f);
 
-        }
+        if (!disableFiring)
+        {
+            if (i >= 1)
+            {
+                i--;
+                Vector3 prevone = new Vector3(5.85f, 0f, 0f);
+                iTween.MoveBy(karakter1, prevone, 0.75f);
+                iTween.MoveBy(karakter2, prevone, 0.75f);
+                iTween.MoveBy(karakter3, prevone, 0.75f);
 
+            }
+            if (j >= 1)
+            {
+                j--;
+                Vector3 prevone = new Vector3(5.85f, 0f, 0f);
+                iTween.MoveBy(mode1, prevone, 0.75f);
+                iTween.MoveBy(mode2, prevone, 0.75f);
+                iTween.MoveBy(mode3, prevone, 0.75f);
+
+            }
+            disableFiring = true;
+            Invoke("EnableFiring", firingDisableDuration);
+        }
+      
     }
 
     public void MainMenuMoving()
