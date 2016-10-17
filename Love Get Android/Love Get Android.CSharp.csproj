@@ -78,10 +78,10 @@
     <Compile Include="Assets\GUI\GUI.cs" />
     <Compile Include="Assets\Music\Music.cs" />
     <Compile Include="Assets\Prefab\Prefab.cs" />
-    <Compile Include="Assets\Scripts\Game\GameApplication.cs" />
-    <Compile Include="Assets\Scripts\Game\GameController.cs" />
-    <Compile Include="Assets\Scripts\Game\GameModel.cs" />
-    <Compile Include="Assets\Scripts\Game\GameView.cs" />
+    <Compile Include="Assets\Scripts\Core\GameApplication.cs" />
+    <Compile Include="Assets\Scripts\Core\GameController.cs" />
+    <Compile Include="Assets\Scripts\Core\GameModel.cs" />
+    <Compile Include="Assets\Scripts\Core\GameView.cs" />
     <Compile Include="Assets\Scripts\Menu\MenuApplication.cs" />
     <Compile Include="Assets\Scripts\Menu\MenuController.cs" />
     <Compile Include="Assets\Scripts\Menu\MenuModel.cs" />

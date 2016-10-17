@@ -75,6 +75,8 @@ public class MenuController : MenuElement {
         app.view.charSelect.SetActive(false);
         app.view.modeSelect.SetActive(true);
         app.model.j = 0;
+        app.model.i=100;
+        UpdateTextAndButton();
     }
 
     void EnableFiring()
