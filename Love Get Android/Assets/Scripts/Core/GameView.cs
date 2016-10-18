@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class GameView : GameElement
 {
+    //gameview
     public Image karakterSprite;
     public GameObject nameText;
     public Text dialogueText;

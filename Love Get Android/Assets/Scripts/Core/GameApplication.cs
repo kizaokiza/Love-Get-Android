@@ -3,6 +3,7 @@ using System.Collections;
 
 public class GameElement : MonoBehaviour
 {
+    //gameapp
 
     public GameApplication app { get { return GameObject.FindObjectOfType<GameApplication>(); } }
 }

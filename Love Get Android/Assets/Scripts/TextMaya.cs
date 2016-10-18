@@ -3,6 +3,8 @@ using System.Collections;
 using UnityEngine.UI;
 
 public class TextMaya : MonoBehaviour {
+
+    //gameapp
     public Text dialogText;
     GameObject textbox;
     public int currentLine;

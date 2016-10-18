@@ -3,6 +3,7 @@ using System.Collections;
 
 public class GameController : GameElement
 {
+    //gamecontrol
 
     public void PilihanSatuControl()
     {

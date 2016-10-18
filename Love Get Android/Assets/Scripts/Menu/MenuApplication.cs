@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class MenuElement : MonoBehaviour
 {
+    //menuapp
 
     public MenuApplication app { get { return GameObject.FindObjectOfType<MenuApplication>(); } }
 }

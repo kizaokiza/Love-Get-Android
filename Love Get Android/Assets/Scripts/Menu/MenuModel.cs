@@ -4,6 +4,8 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class MenuModel : MenuElement {
+
+    //menumodel
     //blink start
     public float interval = 0.2f;
     public float startDelay = 0.1f;

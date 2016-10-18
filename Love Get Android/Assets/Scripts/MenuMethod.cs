@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class MenuMethod : MonoBehaviour {
-
+    //menumethod
     public GameObject mainMenu;
     public GameObject menuPanel;
     public GameObject karakter1;

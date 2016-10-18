@@ -4,7 +4,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class MenuView : MenuElement {
-
+    //menuview
     public GameObject tapButton;
     public MaskableGraphic imageblink;
     public GameObject charSelect;
