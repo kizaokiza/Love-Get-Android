@@ -1,5 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
+#if UNITY_EDITOR
+using UnityEditor;
+ #endif
+ 
+
+
 
 public class GameController : GameElement
 {
@@ -38,23 +44,33 @@ public class GameController : GameElement
     #region Expressions
     public void Expression1()
     {
+    #if UNITY_EDITOR
         app.view.karakterSprite.sprite = (Sprite)UnityEditor.AssetDatabase.LoadAssetAtPath("Assets/Sprite/Char/blush2.png", typeof(Sprite));
+# endif
     }
     public void Expression2()
     {
+#if UNITY_EDITOR
         app.view.karakterSprite.sprite = (Sprite)UnityEditor.AssetDatabase.LoadAssetAtPath("Assets/Sprite/Char/laugh2.png", typeof(Sprite));
+# endif
     }
     public void Expression3()
     {
+#if UNITY_EDITOR
         app.view.karakterSprite.sprite = (Sprite)UnityEditor.AssetDatabase.LoadAssetAtPath("Assets/Sprite/Char/mad2.png", typeof(Sprite));
+# endif
     }
     public void Expression4()
     {
+#if UNITY_EDITOR
         app.view.karakterSprite.sprite = (Sprite)UnityEditor.AssetDatabase.LoadAssetAtPath("Assets/Sprite/Char/sad2.png", typeof(Sprite));
+# endif
     }
     public void Expression5()
     {
+#if UNITY_EDITOR
         app.view.karakterSprite.sprite = (Sprite)UnityEditor.AssetDatabase.LoadAssetAtPath("Assets/Sprite/Char/smile2.png", typeof(Sprite));
+#endif
     }
 
     #endregion
