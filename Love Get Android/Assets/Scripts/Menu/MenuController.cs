@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class MenuController : MenuElement {
 
@@ -9,15 +10,30 @@ public class MenuController : MenuElement {
     public void ButtonTappedControl()
     {
 
-        Vector3 logoPindah = new Vector3(0.34f, 3.84f,3f);
-        Vector3 logoKecil = new Vector3(0.47f, 0.47f,0.47f);
+        Vector3 logoPindah = new Vector3(0f, 0.6f,3f);
+        //Vector3 logoKecil = new Vector3(0.47f, 0.47f,0.47f);
 
         
-        iTween.ScaleTo(app.view.tapButton, logoKecil, 1.5f);
+        //iTween.ScaleTo(app.view.tapButton, logoKecil, 1.5f);
         iTween.MoveTo(app.view.tapButton, logoPindah, 1.5f);
         //app.view.nextPrevbutton.SetActive(true);
         Blinking();
-        UpdateTextAndButton();
+        
+    }
+
+    public void StartGamePressedControl()
+    {
+        Vector3 logoPindah = new Vector3(0f, 12f, 3f);
+        //Vector3 logoKecil = new Vector3(0.47f, 0.47f,0.47f);
+
+
+        //iTween.ScaleTo(app.view.tapButton, logoKecil, 1.5f);
+        iTween.MoveTo(app.view.tapButton, logoPindah, 1.5f);
+        iTween.MoveTo(app.view.menuButton, logoPindah, 1.5f);
+        //app.view.nextPrevbutton.SetActive(true);
+        app.model.timesBlinking = 0;
+        InvokeRepeating("ToggleStateTwo", app.model.startDelay, app.model.interval);
+        
     }
 
     public void NextButtonPressedControl()
@@ -72,6 +88,14 @@ public class MenuController : MenuElement {
         }
     }
 
+    private void CharSelect()
+    {
+        app.view.logoThumbnail.SetActive(true);
+        app.view.tapButton.SetActive(false);
+        app.view.charSelect.SetActive(true);
+        app.view.nextPrevbutton.SetActive(true);
+    }
+
     public void PilihKarakterButtonPressedControl()
     {
         app.view.charSelect.SetActive(false);
@@ -79,6 +103,11 @@ public class MenuController : MenuElement {
         app.model.j = 0;
         app.model.i=100;
         UpdateTextAndButton();
+    }
+
+    public void PilihModeButtonPressedControl()
+    {
+        SceneManager.LoadScene("Core", LoadSceneMode.Single);
     }
 
     void EnableFiring()
@@ -152,14 +181,10 @@ public class MenuController : MenuElement {
         if (app.view.imageblink != null)
         {
             app.model.isBlinking = true;
-
             InvokeRepeating("ToggleState", app.model.startDelay, app.model.interval);
-
-
-
         }
     }
-
+    
     public void ToggleState()
     {
         app.view.imageblink.enabled = !app.view.imageblink.enabled;
@@ -168,11 +193,29 @@ public class MenuController : MenuElement {
         {
             app.view.imageblink.enabled = false;
             CancelInvoke();
-            app.view.charSelect.SetActive(true);
-            app.view.nextPrevbutton.SetActive(true);
+            app.view.menuButton.SetActive(true);
+           
         }
 
       
+
+    }
+
+    public void ToggleStateTwo()
+    {
+        //app.view.imageblink.enabled = !app.view.imageblink.enabled;
+        app.model.timesBlinking++;
+        if (app.model.timesBlinking == 6)
+        {
+            
+            CancelInvoke();
+            CharSelect();
+            UpdateTextAndButton();
+           
+
+        }
+
+
 
     }
     #endregion

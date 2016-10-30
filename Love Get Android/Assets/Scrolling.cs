@@ -4,7 +4,7 @@ using System.Collections;
 public class Scrolling : MonoBehaviour {
 
 
-    public float speed = 5f;
+    public float speed = 0.3f;
 	// Use this for initialization
 	void Start () {
 	

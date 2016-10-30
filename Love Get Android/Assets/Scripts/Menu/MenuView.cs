@@ -6,12 +6,14 @@ using UnityEngine.SceneManagement;
 public class MenuView : MenuElement {
     //menuview
     public GameObject tapButton;
+    public GameObject logoThumbnail;
     public MaskableGraphic imageblink;
     public GameObject charSelect;
     public GameObject modeSelect;
     public GameObject nextPrevbutton;
     public GameObject nextButton;
     public GameObject prevButton;
+    public GameObject menuButton;
 
     //karakter object
     public GameObject karakter1;
@@ -35,6 +37,11 @@ public class MenuView : MenuElement {
         app.controller.ButtonTappedControl();
     }
 
+    public void StartGamePressed()
+    {
+        app.controller.StartGamePressedControl();
+    }
+
     public void NextButtonPressed()
     {
         app.controller.NextButtonPressedControl();
@@ -48,6 +55,11 @@ public class MenuView : MenuElement {
     public void PilihKarakterButtonPressed()
     {
         app.controller.PilihKarakterButtonPressedControl();
+    }
+
+    public void PilihModeButtonPressed()
+    {
+        app.controller.PilihModeButtonPressedControl();
     }
 
 
