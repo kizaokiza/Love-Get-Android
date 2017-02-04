@@ -1,0 +1,54 @@
+{
+	"answer" : {
+   		"mainAnswer" : [
+		{ 
+			"id" : 0,
+			"is_right" : 0,
+			"answer0" : "",
+			"expression0": 0,
+			"effect0" :0,
+			"point0" : 0,
+			"explanation0" : "",
+			"answer1" : "",
+			"expression1" : 0,
+			"effect1" :0,
+			"point1" : 0,
+			"explanation1" : "",
+			"answer2" : "",
+			"expression2" : 0,
+			"effect2" :0,
+			"point2" : 0,
+			"explanation2" : "",
+			"answer3" : "",
+			"expression1" : 0,
+			"effect3" :0,
+			"point3" : 0,
+			"explanation3" : ""
+		},
+		{ 
+			"id" : 1,
+			"is_right" : 2,
+			"answer0" : "ans 0,id 1, ir 2, ef 1, p 10",
+			"expression0" : 1,
+			"effect0" : 1,
+			"point0" : 10,
+			"explanation0" : "ex 0",
+			"answer1" : "menurut lo",
+			"expression1" : 3,
+			"effect1" : 3,
+			"point1" : -10,
+			"explanation1" : "jangan kasar sama cewe",
+			"answer2" : "mau tau aja atau mau tau banget?",
+			"expression2" : 2,
+			"effect2" : 2,
+			"point2" : 20,
+			"explanation2" : "sedikit lelucon itu lebih baik",
+			"answer3" : "siapa banget dah lo nanya2",
+			"expression3" : 4,
+			"effect3" : 4,
+			"point3" :-20,
+			"explanation3" : "bro itu kasar banget buat cewe"
+		},
+		]
+	}
+}

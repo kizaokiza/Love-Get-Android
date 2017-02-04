@@ -1,0 +1,239 @@
+{
+    "dialog": {
+        "mainCase": [
+            {
+                "id": 0,
+                "dialog": "dialog id 0, ex 1, if 0, im 1, io 0, cid 1, qid 0",
+                "expression": 1,
+                "is_flipped": 0,
+                "is_main": 1,
+                "is_over": 0,
+                "continue_id": 1,
+                "question_id": 0
+		
+            },
+            {
+                "id": 1,
+                "dialog": "dialog id 1, ex 5, if 0, im 1, io 0, cid 2, qid 0",
+                "expression": 5,
+                "is_flipped": 0,
+                "is_main": 1,
+                "is_over": 0,
+                "continue_id": 2,
+                "question_id": 0
+            },
+            {
+                "id": 2,
+                "dialog": "dialog id 2, ex 5, if 0, im 0, io 0, cid 3, qid 0",
+                "expression": 5,
+                "is_flipped": 0,
+                "is_main": 0,
+                "is_over": 0,
+                "continue_id": 3,
+                "question_id": 0
+            },
+			{
+                "id": 3,
+                "dialog": "dialog id 3, ex 5, if 0, im 0, io 1, cid 0, qid 1",
+                "expression": 5,
+                "is_flipped": 0,
+                "is_main": 0,
+                "is_over": 1,
+                "continue_id": 0,
+                "question_id": 1
+            },
+			{
+                "id": 4,
+                "dialog": "dialog id 4, ex 5, if 0, im 0, io 0, cid 5, qid 0",
+                "expression": 5,
+                "is_flipped": 0,
+                "is_main": 0,
+                "is_over": 0,
+                "continue_id": 5,
+                "question_id": 0
+            },
+			{
+                "id": 5,
+                "dialog": "dialog id 5, ex 5, if 0, im 0, io 0, cid 6, qid 0",
+                "expression": 5,
+                "is_flipped": 0,
+                "is_main": 0,
+                "is_over": 0,
+                "continue_id": 6,
+                "question_id": 0
+            },
+			{
+                "id": 6,
+                "dialog": "dialog id 6, ex 5, if 0, im 0, io 0, cid 7, qid 0",
+                "expression": 5,
+                "is_flipped": 0,
+                "is_main": 0,
+                "is_over": 0,
+                "continue_id": 7,
+                "question_id": 0
+            },
+			{
+                "id": 7,
+                "dialog": "dialog id 7, ex 1, if 0, im 0, io 0, cid 8, qid 0",
+                "expression": 1,
+                "is_flipped": 0,
+                "is_main": 0,
+                "is_over": 0,
+                "continue_id": 8,
+                "question_id": 0
+            },
+			{
+                "id": 8,
+                "dialog": "dialog id 8, ex 2, if 0, im 0, io 0, cid 9, qid 0",
+                "expression": 2,
+                "is_flipped": 0,
+                "is_main": 0,
+                "is_over": 0,
+                "continue_id": 9,
+                "question_id": 0
+            },
+			{
+                "id": 9,
+                "dialog": "dialog id 9, ex 3, if 0, im 0, io 0, cid 10, qid 0",
+                "expression": 3,
+                "is_flipped": 0,
+                "is_main": 0,
+                "is_over": 0,
+                "continue_id": 10,
+                "question_id": 0
+            },
+			{
+                "id": 10,
+                "dialog": "dialog id 10, ex 4, if 0, im 0, io 0, cid 11, qid 0",
+                "expression": 4,
+                "is_flipped": 0,
+                "is_main": 0,
+                "is_over": 0,
+                "continue_id": 11,
+                "question_id": 0
+            },
+			{
+                "id": 11,
+                "dialog": "dialog id 11, ex 5, if 0, im 0, io 0, cid 12, qid 0",
+                "expression": 5,
+                "is_flipped": 0,
+                "is_main": 0,
+                "is_over": 0,
+                "continue_id": 12,
+                "question_id": 0
+            },
+			{
+                "id": 12,
+                "dialog": "dialog id 12, ex 5, if 0, im 0, io 0, cid 13, qid 0",
+                "expression": 5,
+                "is_flipped": 1,
+                "is_main": 0,
+                "is_over": 0,
+                "continue_id": 13,
+                "question_id": 0
+            },
+			{
+                "id": 13,
+                "dialog": "dialog id 13, ex 5, if 0, im 0, io 0, cid 14, qid 0",
+                "expression": 5,
+                "is_flipped": 0,
+                "is_main": 0,
+                "is_over": 0,
+                "continue_id": 14,
+                "question_id": 0
+            },
+			{
+                "id": 14,
+                "dialog": "dialog id 14, ex 5, if 0, im 0, io 0, cid 15, qid 0",
+                "expression": 5,
+                "is_flipped": 0,
+                "is_main": 0,
+                "is_over": 0,
+                "continue_id": 15,
+                "question_id": 0
+            },
+			{
+                "id": 15,
+                "dialog": "dialog id 15, ex 5, if 0, im 0, io 0, cid 16, qid 0",
+                "expression": 5,
+                "is_flipped": 0,
+                "is_main": 0,
+                "is_over": 0,
+                "continue_id": 16,
+                "question_id": 0
+            },
+			{
+                "id": 16,
+                "dialog": "dialog id 16, ex 5, if 0, im 0, io 0, cid 17, qid 0",
+                "expression": 5,
+                "is_flipped": 0,
+                "is_main": 0,
+                "is_over": 0,
+                "continue_id": 17,
+                "question_id": 0
+            },
+			{
+                "id": 17,
+                "dialog": "dialog id 17, ex 5, if 0, im 0, io 0, cid 18, qid 0",
+                "expression": 5,
+                "is_flipped": 0,
+                "is_main": 0,
+                "is_over": 0,
+                "continue_id": 18,
+                "question_id": 0
+            },
+			{
+                "id": 18,
+                "dialog": "dialog id 18, ex 5, if 0, im 0, io 0, cid 21, qid 0",
+                "expression": 5,
+                "is_flipped": 0,
+                "is_main": 0,
+                "is_over": 0,
+                "continue_id": 21,
+                "question_id": 0
+            },
+			{
+                "id": 19,
+                "dialog": "dialog id 19, ex 5, if 0, im 0, io 0, cid 20, qid 0",
+                "expression": 5,
+                "is_flipped": 0,
+                "is_main": 0,
+                "is_over": 0,
+                "continue_id": 20,
+                "question_id": 0
+            },
+			{
+                "id": 20,
+                "dialog": "dialog id 20, ex 5, if 0, im 0, io 0, cid 21, qid 0",
+                "expression": 5,
+                "is_flipped": 0,
+                "is_main": 0,
+                "is_over": 0,
+                "continue_id": 21,
+                "question_id": 0
+            },
+			{
+                "id": 21,
+                "dialog": "dialog id 21, ex 5, if 0, im 0, io 0, cid 22, qid 0",
+                "expression": 5,
+                "is_flipped": 0,
+                "is_main": 0,
+                "is_over": 0,
+                "continue_id": 22,
+                "question_id": 0
+            },
+			{
+                "id": 22,
+                "dialog": "dialog id 22, ex 5, if 0, im 0, io 1, cid 0, qid 3",
+                "expression": 5,
+                "is_flipped": 0,
+                "is_main": 0,
+                "is_over": 1,
+                "continue_id": 0,
+                "question_id": 3
+            }
+			
+			
+        ]
+    }
+}

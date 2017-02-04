@@ -1,9 +1,9 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2015
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Love Get Android.CSharp.Plugins", "Love Get Android.CSharp.Plugins.csproj", "{3214C3E0-1575-1C88-25D5-89233FA34827}"
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{74E8E257-8FA3-5A8C-5102-974DAC01B4A4}") = "Love Get Android", "Assembly-CSharp-firstpass.csproj", "{4FAB8093-930D-D813-0AB6-2943EEEF7EC5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Love Get Android.CSharp", "Love Get Android.CSharp.csproj", "{0C710E4B-A20B-354F-B57F-A40CD31CFEC8}"
+Project("{74E8E257-8FA3-5A8C-5102-974DAC01B4A4}") = "Love Get Android", "Assembly-CSharp.csproj", "{CCB1AF7A-2582-014E-1BD9-066204FD4833}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,16 +11,19 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3214C3E0-1575-1C88-25D5-89233FA34827}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3214C3E0-1575-1C88-25D5-89233FA34827}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3214C3E0-1575-1C88-25D5-89233FA34827}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3214C3E0-1575-1C88-25D5-89233FA34827}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0C710E4B-A20B-354F-B57F-A40CD31CFEC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0C710E4B-A20B-354F-B57F-A40CD31CFEC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0C710E4B-A20B-354F-B57F-A40CD31CFEC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0C710E4B-A20B-354F-B57F-A40CD31CFEC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FAB8093-930D-D813-0AB6-2943EEEF7EC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FAB8093-930D-D813-0AB6-2943EEEF7EC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FAB8093-930D-D813-0AB6-2943EEEF7EC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FAB8093-930D-D813-0AB6-2943EEEF7EC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCB1AF7A-2582-014E-1BD9-066204FD4833}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCB1AF7A-2582-014E-1BD9-066204FD4833}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCB1AF7A-2582-014E-1BD9-066204FD4833}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCB1AF7A-2582-014E-1BD9-066204FD4833}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
 	EndGlobalSection
 EndGlobal
